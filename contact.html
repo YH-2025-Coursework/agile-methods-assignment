@@ -3,22 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact - Monster Reads</title>
 </head>
 <body>
-<h1>Contact</h1>
-<p>Welcome to this page (Contact)</p>
-<a href="https://www.google.com/imghp" target="_blank">
-    <img src="images/image5.jpg" alt="Small image" width="150" height="150">
-</a>
-<!-- Links to all 5 pages. -->
-<nav>
-    <a href="index.html">Home</a> |
-    <a href="checkout.html">Products</a> |
-    <a href="product.html">Product</a> |
-    <a href="about.html">About</a> |
-    <a href="contact.html">Contact</a>
-</nav>
+    <h1>Monster Reads</h1>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="checkout.html">Products</a> |
+        <a href="product.html">Product</a> |
+        <a href="about.html">About</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <h2>Contact Us</h2>
+
+    <h3>Contact Information</h3>
+    <p>Email: <a href="mailto:info@monsterreads.com">info@monsterreads.com</a></p>
+    <p>Phone: <a href="tel:+46701234567">+46 70 123 45 67</a></p>
+    <p>Address: 123 Bookstore Lane, Stockholm, Sweden</p>
+
+    <h3>Send Us a Message</h3>
+    <form>
+        <p>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name">
+        </p>
+        <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email">
+        </p>
+        <p>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" cols="30"></textarea>
+        </p>
+        <button type="submit">Send Message</button>
+    </form>
 </body>
 </html>
-
