@@ -55,3 +55,16 @@ img:hover {
     transform: scale(1.03);
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
 }
+
+/* =========================
+   JOKE ELEMENT
+   ========================= */
+
+#joke {
+    background-color: #f5f5f5;
+    border-left: 4px solid #4b2e83;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    max-width: 400px;
+    font-style: italic;
+}
