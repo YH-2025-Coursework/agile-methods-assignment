@@ -1,24 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
+  <meta charset="UTF-8">
+  <title>Monster Reads - Checkout</title>
 </head>
 <body>
-<h1>Products</h1>
-<p>Welcome to this page (Products)</p>
-<a href="https://www.google.com/imghp" target="_blank">
-    <img src="images/image2.jpg" alt="Small image" width="150" height="150">
-</a>
-<!-- Links to all 5 pages. -->
-<nav>
+
+  <h1>Monster Reads</h1>
+
+  <nav>
     <a href="index.html">Home</a> |
-    <a href="product.html">Product</a> |
-    <a href="checkout.html">Checkout</a> |
+    <a href="products.html">Products</a> |
     <a href="about.html">About</a> |
-    <a href="contact.html">Contact</a>
-</nav>
+    <a href="contact.html">Contact</a> |
+    <a href="checkout.html">Checkout</a>
+  </nav>
+
+  <h2>Checkout</h2>
+
+  <form>
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <label for="name">Full name *</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email *</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="phone">Phone number *</label><br>
+      <input type="tel" id="phone" name="phone" required>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Shipping Address</legend>
+
+      <label for="street">Street *</label><br>
+      <input type="text" id="street" name="street" required><br><br>
+
+      <label for="city">City *</label><br>
+      <input type="text" id="city" name="city" required><br><br>
+
+      <label for="postal">Postal code *</label><br>
+      <input type="text" id="postal" name="postal" required><br><br>
+
+      <label for="country">Country *</label><br>
+      <input type="text" id="country" name="country" required>
+    </fieldset>
+
+    <br>
+
+    <button type="submit">Submit Order</button>
+  </form>
+
 </body>
 </html>
-
