@@ -1,0 +1,57 @@
+/* =========================
+   BUTTONS
+   ========================= */
+
+button {
+    background-color: #4b2e83;   /* dark purple */
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #36205f;
+    transform: scale(1.05);
+}
+
+/* =========================
+   FORM ELEMENTS
+   ========================= */
+
+input,
+textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #4b2e83;
+    outline: none;
+}
+
+/* =========================
+   IMAGES
+   ========================= */
+
+img {
+    border-radius: 8px;
+    border: 2px solid #eee;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
