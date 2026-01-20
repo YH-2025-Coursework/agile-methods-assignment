@@ -5,6 +5,7 @@ A static webshop for classic literature with a gothic twist. This is a school gr
 **🔗 Live Site:** [https://yh-2025-coursework.github.io/agile-methods-assignment/](https://yh-2025-coursework.github.io/agile-methods-assignment/)
 
 **Shop Concept:** Monster Reads specializes in selling classic horror and gothic literature.
+
 **Product:** *Frankenstein* by Mary Shelley
 
 ## Pages
