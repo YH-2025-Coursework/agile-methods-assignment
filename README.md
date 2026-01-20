@@ -1,42 +1,47 @@
-# Simple HTML Website
+# Monster Reads
 
-A basic 5-page HTML website project.
+A static webshop for classic literature with a gothic twist. This is a school group project focused on practicing agile workflow and teamwork.
+
+**🔗 Live Site:** [https://yh-2025-coursework.github.io/agile-methods-assignment/](https://yh-2025-coursework.github.io/agile-methods-assignment/)
+
+**Shop Concept:** Monster Reads specializes in selling classic horror and gothic literature.
+**Product:** *Frankenstein* by Mary Shelley
 
 ## Pages
 
-- **index.html** - Home page
-- **checkout.html** - Products listing page
-- **product.html** - Individual product page
-- **about.html** - About page
-- **contact.html** - Contact page
+- **index.html** - Home page featuring the product and a random joke API
+- **product.html** - Product details page with pricing and description
+- **checkout.html** - Checkout form with personal information and shipping address
+- **about.html** - About page describing the shop concept
+- **contact.html** - Contact page with contact information and message form
 
-## Structure
+## Features
 
-Each page contains:
-- Basic HTML5 structure
-- Page title and heading
-- Welcome message
-- Navigation links to all pages
-- A small image that links to Google Images
+- **Responsive navigation bar** - Consistent navigation across all pages
+- **Forms with validation** - Checkout and contact forms with required field validation
+- **Random joke API** - Integration with joke API on the home page
 
-## Images
+## Styling
 
-All images are stored in the `images/` folder:
-- image1.jpg
-- image2.jpg
-- image3.jpg
-- image4.jpg
-- image5.jpg
+The project uses a layered CSS approach:
 
-## How to Use
+- **base.css** - Typography, colors, and CSS variables
+- **layout.css** - Navigation, page structure, and spacing
+- **components.css** - Buttons, forms, images, and interactive elements
 
-1. Open `index.html` in a web browser
-2. Use the navigation links to move between pages
-3. Click on images to visit Google Images
+## Technologies
 
-## Requirements
+- HTML5
+- CSS3
+- Vanilla JavaScript (for joke API)
+- [Official Joke API](https://official-joke-api.appspot.com/)
 
-- No external dependencies
-- Works in any modern web browser
-- No CSS styling (plain HTML only)
+## Project Context
+
+This is a school assignment where the focus is on **agile workflow and teamwork**, not production-quality code. The webshop is non-functional (no actual checkout processing) and serves as a vehicle for practicing:
+
+- Feature branch workflow
+- GitHub Issues and Projects (Kanban board)
+- Pull requests and code review
+- Team collaboration using Discord and VS Code
 
