@@ -29,7 +29,7 @@
         <p>By famous author Mary Shelley.</p>
         <img src="images/image6.png" alt="Frankenstein book cover" width="500">
         <p>
-            <a href="product.html" target="_blank">Learn more</a>
+            <a href="product.html">Learn more</a>
         </p>
 
     </section>
@@ -55,9 +55,16 @@
 </style>
 -->
 
-<button onclick="loadJoke()">Get a new joke</button>
+<hr class="content-divider">
 
-<p id="joke"></p>
+<section class="joke-section">
+    <h2>Take a Break</h2>
+    <p>Enjoy a random joke while browsing our collection!</p>
+
+    <button onclick="loadJoke()">Get a new joke</button>
+
+    <p id="joke"></p>
+</section>
 <script>
   // Hämta paragrafen där skämtet ska visas
   const jokeElement = document.getElementById("joke");
