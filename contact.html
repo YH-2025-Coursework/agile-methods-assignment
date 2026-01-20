@@ -28,18 +28,21 @@
 
     <h3>Send Us a Message</h3>
     <form>
-        <p>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name">
-        </p>
-        <p>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email">
-        </p>
-        <p>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="5" cols="30"></textarea>
-        </p>
+        <fieldset>
+            <legend>Your Message</legend>
+
+            <label for="name">Name *</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email *</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message *</label><br>
+            <textarea id="message" name="message" rows="5" cols="30" required></textarea>
+        </fieldset>
+
+        <br>
+
         <button type="submit">Send Message</button>
     </form>
 </body>

@@ -66,3 +66,22 @@ img:hover {
     max-width: 400px;
     font-style: italic;
 }
+
+/* =========================
+   PRODUCT CARD
+   ========================= */
+
+.product-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.product-price {
+    font-size: 2em;
+    font-weight: bold;
+    color: #27ae60;
+    margin: 20px 0;
+}
