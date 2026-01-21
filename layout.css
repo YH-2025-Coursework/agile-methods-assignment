@@ -19,7 +19,7 @@ body {
 body {
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -71,7 +71,7 @@ form p {
 }
 
 fieldset {
-    padding: 20px;
+    padding: 20px 20px 20px 30px;
     margin-bottom: 15px;
 }
 
