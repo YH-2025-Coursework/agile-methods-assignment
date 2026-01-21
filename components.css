@@ -85,3 +85,32 @@ img:hover {
     color: #27ae60;
     margin: 20px 0;
 }
+/* =========================
+   TESTIMONIALS
+   ========================= */
+
+.testimonials {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.testimonial {
+    background-color: #f9f9f9;
+    border-left: 4px solid #27ae60;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.testimonial-text {
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+.testimonial-author {
+    text-align: right;
+    font-weight: bold;
+    color: #27ae60;
+    margin: 0;
+}
