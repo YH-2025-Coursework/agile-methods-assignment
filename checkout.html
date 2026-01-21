@@ -11,55 +11,57 @@
 </head>
 
 <body>
+  <main>
+    <h1>Monster Reads</h1>
 
-  <h1>Monster Reads</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="product.html">Product</a> |
+      <a href="checkout.html">Checkout</a> |
+      <a href="about.html">About</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
 
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="product.html">Product</a> |
-    <a href="checkout.html">Checkout</a> |
-    <a href="about.html">About</a> |
-    <a href="contact.html">Contact</a>
-  </nav>
+    <h2>Checkout</h2>
 
-  <h2>Checkout</h2>
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
 
-  <form>
-    <fieldset>
-      <legend>Personal Information</legend>
+        <label for="name">Full name *</label><br>
+        <input type="text" id="name" name="name" required><br><br>
 
-      <label for="name">Full name *</label><br>
-      <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email *</label><br>
+        <input type="email" id="email" name="email" required><br><br>
 
-      <label for="email">Email *</label><br>
-      <input type="email" id="email" name="email" required><br><br>
+        <label for="phone">Phone number *</label><br>
+        <input type="tel" id="phone" name="phone" required>
+      </fieldset>
 
-      <label for="phone">Phone number *</label><br>
-      <input type="tel" id="phone" name="phone" required>
-    </fieldset>
+      <br>
 
-    <br>
+      <fieldset>
+        <legend>Shipping Address</legend>
 
-    <fieldset>
-      <legend>Shipping Address</legend>
+        <label for="street">Street *</label><br>
+        <input type="text" id="street" name="street" required><br><br>
 
-      <label for="street">Street *</label><br>
-      <input type="text" id="street" name="street" required><br><br>
+        <label for="city">City *</label><br>
+        <input type="text" id="city" name="city" required><br><br>
 
-      <label for="city">City *</label><br>
-      <input type="text" id="city" name="city" required><br><br>
+        <label for="postal">Postal code *</label><br>
+        <input type="text" id="postal" name="postal" required><br><br>
 
-      <label for="postal">Postal code *</label><br>
-      <input type="text" id="postal" name="postal" required><br><br>
+        <label for="country">Country *</label><br>
+        <input type="text" id="country" name="country" required>
+      </fieldset>
 
-      <label for="country">Country *</label><br>
-      <input type="text" id="country" name="country" required>
-    </fieldset>
+      <br>
 
-    <br>
+      <button type="submit">Submit Order</button>
+    </form>
+  </main>
 
-    <button type="submit">Submit Order</button>
-  </form>
   <footer>
     <p>&copy; 2026 Monster Reads. All rights reserved.</p>
     <p>Bringing classic literature to life, one monster at a time.</p>
