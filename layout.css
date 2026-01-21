@@ -21,8 +21,6 @@ body {
     flex-direction: column;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
-    gap: 20px;
 }
 
 /* Main content area - grows to push footer down */
@@ -30,7 +28,6 @@ main {
     flex: 1;
     padding: 30px;
     background-color: #f0f1f2;
-    border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
@@ -38,8 +35,7 @@ main {
 nav {
     background-color: #34495e;
     padding: 15px 20px;
-    border-radius: 5px;
-    margin-bottom: 30px;
+    margin: 0 -30px 30px -30px;
     text-align: center;
 }
 
@@ -120,7 +116,6 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
-    border-radius: 5px;
 }
 
 footer p {
