@@ -11,6 +11,8 @@ button {
     cursor: pointer;
     border-radius: 6px;
     transition: background-color 0.3s;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 button:hover {
@@ -48,6 +50,7 @@ img {
     border: 2px solid #eee;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s;
+    margin-top: 15px;
 }
 
 img:hover {
@@ -61,9 +64,9 @@ img:hover {
 #joke {
     background-color: #f5f5f5;
     border-left: 4px solid #4caf50;
-    padding: 1rem;
+    padding: 1.5rem;
     margin-top: 1.5rem;
-    max-width: 400px;
+    border-radius: 5px;
     font-style: italic;
 }
 
