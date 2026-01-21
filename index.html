@@ -10,25 +10,6 @@
     <link rel="stylesheet" href="base.css">
 </head>
 
-<section class="testimonials">
-    <h2>What Our Customers Say</h2>
-
-    <div class="testimonial">
-        <p class="testimonial-text">"Frankenstein arrived in perfect condition. A must-read for anyone who loves classic literature!"</p>
-        <p class="testimonial-author">— Emma L., Stockholm</p>
-    </div>
-
-    <div class="testimonial">
-        <p class="testimonial-text">"Fast shipping and great customer service. The book exceeded my expectations."</p>
-        <p class="testimonial-author">— Johan K., Gothenburg</p>
-    </div>
-
-    <div class="testimonial">
-        <p class="testimonial-text">"This gothic masterpiece is beautifully presented. Monster Reads is my go-to shop for classics!"</p>
-        <p class="testimonial-author">— Sofia M., Malmö</p>
-    </div>
-</section>
-
 <body>
     <h1>Monster Reads</h1>
 
@@ -53,48 +34,70 @@
 
     </section>
 
-<hr class="content-divider">
+    <hr class="content-divider">
 
-<section class="joke-section">
-    <h2>Take a Break</h2>
-    <p>Enjoy a random joke while browsing our collection!</p>
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
 
-    <button onclick="loadJoke()">Get a new joke</button>
+        <div class="testimonial">
+            <p class="testimonial-text">"Frankenstein arrived in perfect condition. A must-read for anyone who loves
+                classic literature!"</p>
+            <p class="testimonial-author">— Emma L., Stockholm</p>
+        </div>
 
-    <p id="joke"></p>
-</section>
-<script>
-  // Hämta paragrafen där skämtet ska visas
-  const jokeElement = document.getElementById("joke");
+        <div class="testimonial">
+            <p class="testimonial-text">"Fast shipping and great customer service. The book exceeded my expectations."
+            </p>
+            <p class="testimonial-author">— Johan K., Gothenburg</p>
+        </div>
 
-  // Funktion som hämtar ett nytt skämt
-  function loadJoke() {
-    // Visa laddningstext medan vi väntar
-    jokeElement.textContent = "Laddar skämt...";
+        <div class="testimonial">
+            <p class="testimonial-text">"This gothic masterpiece is beautifully presented. Monster Reads is my go-to
+                shop for classics!"</p>
+            <p class="testimonial-author">— Sofia M., Malmö</p>
+        </div>
+    </section>
 
-    // Anropa API:et för att få ett slumpmässigt skämt
-    fetch("https://official-joke-api.appspot.com/random_joke")
-      .then(function (response) {
-        // Gör om svaret till JSON
-        return response.json();
-      })
-      .then(function (joke) {
-        // Visa skämtet på sidan
-        jokeElement.textContent =
-          joke.setup + " — " + joke.punchline;
-      })
-      .catch(function () {
-        // Om något går fel, visa ett felmeddelande
-        jokeElement.textContent =
-          "Kunde inte ladda skämt 😢";
-      });
-  }
+    <section class="joke-section">
+        <h2>Take a Break</h2>
+        <p>Enjoy a random joke while browsing our collection!</p>
 
-  // Ladda ett skämt automatiskt när sidan öppnas
-  loadJoke();
-</script>
+        <button onclick="loadJoke()">Get a new joke</button>
 
-    
+        <p id="joke"></p>
+    </section>
+    <script>
+        // Hämta paragrafen där skämtet ska visas
+        const jokeElement = document.getElementById("joke");
+
+        // Funktion som hämtar ett nytt skämt
+        function loadJoke() {
+            // Visa laddningstext medan vi väntar
+            jokeElement.textContent = "Laddar skämt...";
+
+            // Anropa API:et för att få ett slumpmässigt skämt
+            fetch("https://official-joke-api.appspot.com/random_joke")
+                .then(function (response) {
+                    // Gör om svaret till JSON
+                    return response.json();
+                })
+                .then(function (joke) {
+                    // Visa skämtet på sidan
+                    jokeElement.textContent =
+                        joke.setup + " — " + joke.punchline;
+                })
+                .catch(function () {
+                    // Om något går fel, visa ett felmeddelande
+                    jokeElement.textContent =
+                        "Kunde inte ladda skämt 😢";
+                });
+        }
+
+        // Ladda ett skämt automatiskt när sidan öppnas
+        loadJoke();
+    </script>
+
+
 
 </body>
 
