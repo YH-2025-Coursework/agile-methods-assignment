@@ -1,0 +1,18 @@
+# Claude Code
+.claude/
+CLAUDE.md
+
+# OS generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Reads</title>
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="base.css">
+</head>
+
+<body>
+    <main>
+        <h1>Monster Reads</h1>
+
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="product.html">Product</a> |
+            <a href="checkout.html">Checkout</a> |
+            <a href="about.html">About</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <h2>Only the Best-Selling Classics</h2>
+
+        <section>
+            <h3>Frankenstein</h3>
+            <p>The classic gothic horror novel.</p>
+            <p>By famous author Mary Shelley.</p>
+            <img src="images/image6.png" alt="Frankenstein book cover" width="500">
+            <p>
+                <a href="product.html">Learn more</a>
+            </p>
+        </section>
+
+        <section class="testimonials">
+            <h2>What Our Customers Say</h2>
+
+            <div class="testimonial">
+                <p class="testimonial-text">"Frankenstein arrived in perfect condition. A must-read for anyone who loves
+                    classic literature!"</p>
+                <p class="testimonial-author">— Emma L., Stockholm</p>
+            </div>
+
+            <div class="testimonial">
+                <p class="testimonial-text">"Fast shipping and great customer service. The book exceeded my expectations."
+                </p>
+                <p class="testimonial-author">— Johan K., Gothenburg</p>
+            </div>
+
+            <div class="testimonial">
+                <p class="testimonial-text">"This gothic masterpiece is beautifully presented. Monster Reads is my go-to
+                    shop for classics!"</p>
+                <p class="testimonial-author">— Sofia M., Malmö</p>
+            </div>
+        </section>
+
+        <hr class="content-divider">
+
+        <section class="joke-section">
+            <h2>Take a Break</h2>
+            <p>Enjoy a random joke while browsing our collection!</p>
+
+            <button onclick="loadJoke()">Get a new joke</button>
+
+            <p id="joke"></p>
+        </section>
+
+        <script>
+            // Hämta paragrafen där skämtet ska visas
+            const jokeElement = document.getElementById("joke");
+
+            // Funktion som hämtar ett nytt skämt
+            function loadJoke() {
+                // Visa laddningstext medan vi väntar
+                jokeElement.textContent = "Laddar skämt...";
+
+                // Anropa API:et för att få ett slumpmässigt skämt
+                fetch("https://official-joke-api.appspot.com/random_joke")
+                    .then(function (response) {
+                        // Gör om svaret till JSON
+                        return response.json();
+                    })
+                    .then(function (joke) {
+                        // Visa skämtet på sidan
+                        jokeElement.textContent =
+                            joke.setup + " — " + joke.punchline;
+                    })
+                    .catch(function () {
+                        // Om något går fel, visa ett felmeddelande
+                        jokeElement.textContent =
+                            "Kunde inte ladda skämt 😢";
+                    });
+            }
+
+            // Ladda ett skämt automatiskt när sidan öppnas
+            loadJoke();
+        </script>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Monster Reads. All rights reserved.</p>
+        <p>Bringing classic literature to life, one monster at a time.</p>
+    </footer>
+
+
+
+</body>
+
+</html>

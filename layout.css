@@ -1,0 +1,123 @@
+/* layout.css - Navigation and Page Structure */
+
+/* Reset margin and padding for all elements, and apply border-box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Using width: 100vw on body can cause a slight horizontal scroll.
+   Using 100% instead avoids that issue. */
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Page container with sticky footer */
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Main content area - grows to push footer down */
+main {
+    flex: 1;
+    padding: 30px;
+    background-color: #f0f1f2;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Navigation bar */
+nav {
+    background-color: #34495e;
+    padding: 15px 20px;
+    margin: 0 -30px 30px -30px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    padding: 10px 15px;
+    margin: 0 5px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    transform: none;
+}
+
+nav a:hover {
+    background-color: #27ae60;
+    border-radius: 3px;
+    text-decoration: none;
+    transform: none;
+}
+
+/* Section spacing */
+section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Form layout */
+form {
+    max-width: 500px;
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+fieldset {
+    padding: 20px 20px 20px 30px;
+    margin-bottom: 15px;
+}
+
+legend {
+    padding: 0 10px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Content divider */
+.content-divider {
+    border: none;
+    border-top: 2px solid #ddd;
+    margin: 50px 0 30px 0;
+}
+
+/* Joke section */
+.joke-section {
+    padding: 20px;
+    background-color: #d5dbde;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.joke-section h2 {
+    margin-top: 0;
+}
+
+.joke-section p:first-of-type {
+    color: #7f8c8d;
+    font-size: 0.95em;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}

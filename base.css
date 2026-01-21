@@ -1,0 +1,63 @@
+/* base.css - Typography and Colors */
+
+/* Color scheme */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #27ae60;
+    --background-color: #d4dce5;
+    --text-color: #34495e;
+    --link-color: #3498db;
+}
+
+/* Base styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Typography */
+h1 {
+    color: var(--primary-color);
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 2em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    color: var(--secondary-color);
+    font-size: 1.5em;
+    margin-top: 0.8em;
+    margin-bottom: 0.4em;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+a {
+  color: var(--link-color);
+  font-weight: 600;
+  display: inline-block;  
+  transition: transform 0.15s ease;
+}
+
+a:hover {
+    transform: translateY(-2px);
+}
+
+strong {
+    color: var(--primary-color);
+}
+
+
+
